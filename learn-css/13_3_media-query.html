@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      /*
+      min-width
+      max-width
+      0 ~ 400px : blue
+      401px ~ 600px : red
+      601px ~ : yellow 
+      */
+      @media (max-width: 400px) {
+        body {
+          background-color: blue;
+        }
+      }
+
+      @media (min-width: 401px) and (max-width: 600px) {
+        body {
+          background-color: red;
+        }
+      }
+
+      @media (min-width: 601px) {
+        body {
+          background-color: yellow;
+        }
+      }
+
+      /* 인쇄 화면에서 적용 */
+      @media print {
+        h1 {
+          font-size: 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>안녕하세요</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente autem
+      iste quia corrupti nam iure necessitatibus. Tempora excepturi rem
+      voluptates fugiat nulla harum laboriosam odio ullam non exercitationem.
+      Quasi, voluptas.
+    </p>
+  </body>
+</html>

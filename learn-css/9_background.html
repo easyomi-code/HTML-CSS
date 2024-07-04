@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <style>
+      .red {
+        background-color: rgba(255, 0, 0, 0.664);
+        width: 120px;
+        height: 120px;
+      }
+      .image {
+        background-image: url('../assets/images/soccer.jpg');
+        background-repeat: repeat;
+        background-position: top right;
+        width: 200px;
+        height: 400px;
+        border: 1px solid black;
+        display: inline-block;
+        /* overflow(자주쓰임) */
+        overflow-y: scroll;
+      }
+      .attachment-scroll {
+        background-attachment: scroll;
+      }
+      .attachment-fixed {
+        background-attachment: fixed;
+      }
+      .attachment-local {
+        background-attachment: local;
+      }
+      .background-size {
+        width: 400px;
+        height: 200px;
+        background-image: url('../assets/images/football.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 1px solid black;
+      }
+      .linear-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid red;
+        background: linear-gradient(to right, yellow, blue, pink);
+      }
+      .radial-gradiant {
+        width: 500px;
+        height: 200px;
+        border: 1px solid blue;
+        background: radial-gradient(
+          circle at 10% 50%,
+          white,
+          yellow,
+          red,
+          blue
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h3>background-color</h3>
+    <div class="red"></div>
+
+    <h3>background-image</h3>
+    <div class="image attachment-scroll">
+      <h3 style="text-align: center">scroll</h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consectetur
+      quibusdam ullam tempora cumque aspernatur, temporibus omnis a, architecto
+      voluptates veniam! Aliquam veritatis eveniet commodi minima sunt pariatur,
+      error autem! Labore quo fugit maxime deleniti ex nemo veritatis, eius
+      dignissimos fugiat libero voluptate pariatur aut! Distinctio facilis hic
+      molestias sapiente laboriosam in possimus iusto. Beatae in tempore
+      aliquid? A, asperiores. Facilis rerum assumenda sit porro aspernatur
+      incidunt deserunt saepe? Repellendus commodi nulla iusto id! Eos
+      laboriosam libero eveniet suscipit voluptatibus quos, mollitia excepturi.
+      Ullam ipsum atque autem veniam! Ducimus, dolorum. Inventore quaerat saepe
+      aspernatur, harum cumque voluptatum consequatur itaque ad. Perspiciatis
+      velit eos quaerat, fuga eaque temporibus cupiditate, quia fugit voluptate
+      recusandae nisi nesciunt a soluta incidunt inventore! Qui, tempora.
+      Corrupti quisquam, tenetur debitis ut sint eum quo, quae, rem non dolor
+      possimus ea. Voluptate repellendus dolore minus, excepturi adipisci iusto
+      consectetur, ad doloremque possimus repudiandae laborum odit vitae magnam?
+      Velit dolor alias accusantium maxime, id reprehenderit aspernatur et
+      voluptatem vitae porro tenetur deleniti beatae, officia perspiciatis
+      voluptas neque laborum dolore? Magni expedita totam modi. Praesentium
+      mollitia voluptatum eum doloribus! Omnis dolor iusto officia, perferendis
+      cumque repudiandae ut deleniti accusamus pariatur aspernatur ullam a,
+      placeat modi praesentium. Quia, consequuntur eaque! Recusandae unde quis
+      mollitia iste minus voluptatem eius maiores. Fugit! Non at libero atque
+      harum voluptates! Doloremque, deserunt! Commodi dignissimos fuga enim
+      quisquam! Magni, repellat esse aspernatur dignissimos, maiores dolore
+      rerum sunt atque eos reiciendis qui totam pariatur, accusamus similique.
+    </div>
+    <div class="image attachment-fixed">
+      <h3 style="text-align: center">fixed</h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consectetur
+      quibusdam ullam tempora cumque aspernatur, temporibus omnis a, architecto
+      voluptates veniam! Aliquam veritatis eveniet commodi minima sunt pariatur,
+      error autem! Labore quo fugit maxime deleniti ex nemo veritatis, eius
+      dignissimos fugiat libero voluptate pariatur aut! Distinctio facilis hic
+      molestias sapiente laboriosam in possimus iusto. Beatae in tempore
+      aliquid? A, asperiores. Facilis rerum assumenda sit porro aspernatur
+      incidunt deserunt saepe? Repellendus commodi nulla iusto id! Eos
+      laboriosam libero eveniet suscipit voluptatibus quos, mollitia excepturi.
+      Ullam ipsum atque autem veniam! Ducimus, dolorum. Inventore quaerat saepe
+      aspernatur, harum cumque voluptatum consequatur itaque ad. Perspiciatis
+      velit eos quaerat, fuga eaque temporibus cupiditate, quia fugit voluptate
+      recusandae nisi nesciunt a soluta incidunt inventore! Qui, tempora.
+      Corrupti quisquam, tenetur debitis ut sint eum quo, quae, rem non dolor
+      possimus ea. Voluptate repellendus dolore minus, excepturi adipisci iusto
+      consectetur, ad doloremque possimus repudiandae laborum odit vitae magnam?
+      Velit dolor alias accusantium maxime, id reprehenderit aspernatur et
+      voluptatem vitae porro tenetur deleniti beatae, officia perspiciatis
+      voluptas neque laborum dolore? Magni expedita totam modi. Praesentium
+      mollitia voluptatum eum doloribus! Omnis dolor iusto officia, perferendis
+      cumque repudiandae ut deleniti accusamus pariatur aspernatur ullam a,
+      placeat modi praesentium. Quia, consequuntur eaque! Recusandae unde quis
+      mollitia iste minus voluptatem eius maiores. Fugit! Non at libero atque
+      harum voluptates! Doloremque, deserunt! Commodi dignissimos fuga enim
+      quisquam! Magni, repellat esse aspernatur dignissimos, maiores dolore
+      rerum sunt atque eos reiciendis qui totam pariatur, accusamus similique.
+    </div>
+    <div class="image attachment-local">
+      <h3 style="text-align: center">local</h3>
+      > Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+      consectetur quibusdam ullam tempora cumque aspernatur, temporibus omnis a,
+      architecto voluptates veniam! Aliquam veritatis eveniet commodi minima
+      sunt pariatur, error autem! Labore quo fugit maxime deleniti ex nemo
+      veritatis, eius dignissimos fugiat libero voluptate pariatur aut!
+      Distinctio facilis hic molestias sapiente laboriosam in possimus iusto.
+      Beatae in tempore aliquid? A, asperiores. Facilis rerum assumenda sit
+      porro aspernatur incidunt deserunt saepe? Repellendus commodi nulla iusto
+      id! Eos laboriosam libero eveniet suscipit voluptatibus quos, mollitia
+      excepturi. Ullam ipsum atque autem veniam! Ducimus, dolorum. Inventore
+      quaerat saepe aspernatur, harum cumque voluptatum consequatur itaque ad.
+      Perspiciatis velit eos quaerat, fuga eaque temporibus cupiditate, quia
+      fugit voluptate recusandae nisi nesciunt a soluta incidunt inventore! Qui,
+      tempora. Corrupti quisquam, tenetur debitis ut sint eum quo, quae, rem non
+      dolor possimus ea. Voluptate repellendus dolore minus, excepturi adipisci
+      iusto consectetur, ad doloremque possimus repudiandae laborum odit vitae
+      magnam? Velit dolor alias accusantium maxime, id reprehenderit aspernatur
+      et voluptatem vitae porro tenetur deleniti beatae, officia perspiciatis
+      voluptas neque laborum dolore? Magni expedita totam modi. Praesentium
+      mollitia voluptatum eum doloribus! Omnis dolor iusto officia, perferendis
+      cumque repudiandae ut deleniti accusamus pariatur aspernatur ullam a,
+      placeat modi praesentium. Quia, consequuntur eaque! Recusandae unde quis
+      mollitia iste minus voluptatem eius maiores. Fugit! Non at libero atque
+      harum voluptates! Doloremque, deserunt! Commodi dignissimos fuga enim
+      quisquam! Magni, repellat esse aspernatur dignissimos, maiores dolore
+      rerum sunt atque eos reiciendis qui totam pariatur, accusamus similique.
+    </div>
+    <!-- <div class="image attachment-fixed"></div>
+    <div class="image attachment-local"></div> -->
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>radial-gradiant</h3>
+    <div class="radial-gradiant"></div>
+    <div style="height: 1000px; width: 10px; background-color: red"></div>
+  </body>
+</html>

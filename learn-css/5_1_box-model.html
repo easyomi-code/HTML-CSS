@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      /* Content, Padding, Border, Margin */
+      div.content {
+        background-color: rgb(167, 167, 167);
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 10px solid green;
+        margin: 40px;
+      }
+      span {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        /* 인라인 요소(span)에서 width, height 속성을 지정하고 싶으면 display: inline-block */
+        display: inline-block;
+      }
+      div.padding {
+        border: 1px solid black;
+        padding: 20px;
+      }
+      div.margin {
+        border: 1px solid blue;
+        margin: 20px;
+        /* margin-left: 20px; */
+      }
+      .shape {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content"></div>
+    <span>Hello CSS</span>
+    <div class="padding">
+      냉면(冷麪)은 주로 한국 요리에서 밀이나 메밀로 만든 면을 차가운 육수에 말아
+      먹거나 양념에 비벼 먹는 음식을 가리킨다. 이외에 보통명사로 차갑게 만든
+      모든 형태의 국수의 통칭으로도 쓰인다.
+    </div>
+    <div class="margin">
+      김밥(Gimbap, Seaweed roll)은 밥을 김으로 감싸, 둥글게 말아서 잘라낸
+      음식으로, 오늘날 한국에서는 넓은 의미의 분식에 포함된다.
+    </div>
+    <div class="shape" style="margin-bottom: 40px"></div>
+    <div class="shape"></div>
+  </body>
+</html>
